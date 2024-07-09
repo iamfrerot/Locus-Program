@@ -8,3 +8,18 @@
  padding: 0;
  font-family: 'Oswald';
 }
+#hamburger div {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#hamburger.open div:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#hamburger.open div:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburger.open div:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
