@@ -23,7 +23,7 @@ const NavBar = () => {
 
  return (
   <nav
-   className={`fixed w-full top-0 bg-black px-5  py-4 transform transition-transform duration-500 ease-in-out border-b-[1px] border-third flex items-center justify-between  ${
+   className={`fixed w-full top-0 bg-black px-5  py-4 transform transition-transform duration-500 ease-in-out border-b-[1px] border-third flex items-center justify-between z-30  ${
     show ? "translate-y-0 " : "-translate-y-full"
    }`}
   >

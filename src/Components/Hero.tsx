@@ -1,16 +1,36 @@
 import { Link } from "react-scroll";
 import photo1 from "../assets/photo1.jpg";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 const Hero = () => {
+ const heroRef = useRef(null);
+ const isInViewHero = useInView(heroRef);
+ const heroControls = useAnimation();
+ useEffect(() => {
+  if (isInViewHero) {
+   heroControls.start("visible");
+  }
+ }, [isInViewHero]);
  return (
   <section
    id='home'
-   className='h-[85vh] px-4 w-screen flex items-center justify-between md:gap-x-20 md:justify-center lg:gap-x-[200px]'
+   className='h-[86vh] px-4 flex items-center justify-between md:gap-x-20 md:justify-center lg:gap-x-[200px]'
   >
-   <div className='md:w-[300px] flex flex-col items-start gap-y-3'>
+   <motion.div
+    ref={heroRef}
+    variants={{
+     hidden: { opacity: 0 },
+     visible: { opacity: 1 },
+    }}
+    initial='hidden'
+    animate={heroControls}
+    transition={{ duration: 2, delay: 0.2 }}
+    className='md:w-[300px] flex flex-col items-start gap-y-3'
+   >
     <p className='leading-snug text-5xl lg:leading-tight lg:text-7xl  uppercase '>
      Empower Your Future
     </p>
-    <blockquote className='text-[12px] sm:text-lg  opacity-35 lg:w-[200px]'>
+    <blockquote className='text-[12px] sm:text-lg opacity-[0.70] '>
      "start and scale your business to transform your life and family"
     </blockquote>
     <Link
@@ -19,7 +39,7 @@ const Hero = () => {
     >
      Ready
     </Link>
-   </div>
+   </motion.div>
    <img src={photo1} alt='Profile' className=' h-full hidden md:block' />
   </section>
  );
