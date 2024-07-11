@@ -2,6 +2,7 @@ import Hero from "./Components/Hero";
 import NavBar from "./Components/NavBar";
 import About from "./Components/About";
 import Locus from "./Components/Locus";
+import Testimonials from "./Components/Testimonials";
 function App() {
  return (
   <div className='bg-black text-white w-full'>
@@ -10,6 +11,7 @@ function App() {
     <Hero />
     <About />
     <Locus />
+    <Testimonials />
    </div>
   </div>
  );
