@@ -40,10 +40,10 @@ const NavBar = () => {
      Home
     </Link>
     <Link
-     to='locus '
+     to='locus'
      smooth={true}
      className='cursor-pointer text-sm sm:text-xl'
-     offset={-200}
+     offset={-100}
     >
      Locus
     </Link>
