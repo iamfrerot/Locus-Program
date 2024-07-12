@@ -3,6 +3,7 @@ import NavBar from "./Components/NavBar";
 import About from "./Components/About";
 import Locus from "./Components/Locus";
 import Testimonials from "./Components/Testimonials";
+import Contact from "./Components/Contact";
 function App() {
  return (
   <div className='bg-black text-white w-full'>
@@ -12,6 +13,7 @@ function App() {
     <About />
     <Locus />
     <Testimonials />
+    <Contact />
    </div>
   </div>
  );
