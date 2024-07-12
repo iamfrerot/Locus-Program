@@ -32,7 +32,10 @@ const testimonials: Card[] = [
 ];
 const Testimonials = () => {
  return (
-  <section className=' py-10 lg:px-10 relative flex flex-col items-center '>
+  <section
+   className=' py-10 lg:px-10 relative flex flex-col items-center '
+   id='testimonials'
+  >
    <h1 className='text-2xl mb-12'>Testimonials</h1>
    <div className='flex justify-center px-6 lg:px-0 items-center gap-4 flex-col-reverse sm:flex-row'>
     <p className='font-[200] lg:text-xl sm:max-w-[50%]'>

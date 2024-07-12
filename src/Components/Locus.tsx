@@ -2,16 +2,19 @@ const Locus = () => {
  return (
   <section
    id='locus'
-   className='w-full  lg:h-[90vh] flex flex-col justify-center md:flex-row md:items-center bg-third  rounded-tl-[100px] rounded-br-[100px] md:rounded-tl-[200px] md:rounded-br-[200px] p-10 gap-10'
+   className='w-full  lg:h-[80vh] flex flex-col justify-center md:flex-row md:items-center bg-third  rounded-tl-[100px] rounded-br-[100px] md:rounded-tl-[200px] md:rounded-br-[200px] p-10 gap-10'
   >
-   <p className='text-sm font-bold  md:text-2xl  md:max-w-[50%] md:font-[200]'>
-    Are you any individual looking to start or grow your own business? Do you
-    want to provide for your family, support your community, and live out your
-    faith through entrepreneurship? But you constantly battling with
-    procrastination? I have been in same place and i have overcome it ! so i’m
-    inspired to help other entrepreneurs to do the same and scale fast their
-    business. Both online and offline business.
-   </p>
+   <div className=' md:max-w-[50%]'>
+    <p className='text-2xl'>Locus Program:</p>
+    <p className='text-sm font-[200]   md:text-xl '>
+     Are you any individual looking to start or grow your own business? Do you
+     want to provide for your family, support your community, and live out your
+     faith through entrepreneurship? But you constantly battling with
+     procrastination? I have been in same place and i have overcome it ! so i’m
+     inspired to help other entrepreneurs to do the same and scale fast their
+     business. Both online and offline business.
+    </p>
+   </div>
    <div className='flex flex-col lg:max-w-[50%]'>
     <p className='lg:text-xl opacity-[0.70] font-[200]'>
      Though out the program you will learn:
