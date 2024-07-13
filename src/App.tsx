@@ -5,6 +5,7 @@ import Locus from "./Components/Locus";
 import Testimonials from "./Components/Testimonials";
 import Contact from "./Components/Contact";
 import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 function App() {
  return (
   <div className='bg-black text-white w-full'>
@@ -16,6 +17,7 @@ function App() {
     <Testimonials />
     <Contact />
     <Toaster position='top-left' />
+    <Analytics />
    </div>
   </div>
  );
