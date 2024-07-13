@@ -4,6 +4,7 @@ import About from "./Components/About";
 import Locus from "./Components/Locus";
 import Testimonials from "./Components/Testimonials";
 import Contact from "./Components/Contact";
+import { Toaster } from "react-hot-toast";
 function App() {
  return (
   <div className='bg-black text-white w-full'>
@@ -14,6 +15,7 @@ function App() {
     <Locus />
     <Testimonials />
     <Contact />
+    <Toaster position='top-left' />
    </div>
   </div>
  );
