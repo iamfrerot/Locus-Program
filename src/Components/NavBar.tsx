@@ -73,7 +73,7 @@ return (
    <div className='h-1 w-8 border rounded-full'></div>
   </div>
   <div
-   className={`w-full h-screen sm:hidden flex flex-col items-center justify-between absolute top-0 right-0 bg-black p-9 transition-transform duration-500  ${
+   className={`w-full h-[120vh] sm:hidden flex flex-col items-center gap-y-12 absolute top-0 right-0 bg-black p-9 transition-transform duration-500  ${
     mobileNav ? "translate-x-0" : "translate-x-[700px]"
    }`}
   >
