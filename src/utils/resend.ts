@@ -5,7 +5,7 @@ const contactEmail = import.meta.env.VITE_CONTACT_EMAIL;
 
 const resend = async ({ email, subject, message }: formFields) => {
  try {
-  const response = await fetch("/api/emails", {
+  const response = await fetch("https://api.resend.com", {
    method: "POST",
    headers: {
     Authorization: `Bearer ${RESEND_API_KEY}`,
