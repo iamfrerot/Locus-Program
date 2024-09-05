@@ -1,12 +1,26 @@
-import './App.css'
-
+import Hero from "./Components/Hero";
+import NavBar from "./Components/NavBar";
+import About from "./Components/About";
+import Locus from "./Components/Locus";
+import Testimonials from "./Components/Testimonials";
+import Contact from "./Components/Contact";
+import { Toaster } from "react-hot-toast";
+import { Analytics } from "@vercel/analytics/react";
 function App() {
-
-  return (
-   <section className='bg-black text-white h-screen w-screen flex items-center justify-center'>
-    <p>Locus Program. Coming Soon...</p>
-   </section>
-  );
+ return (
+  <div className='bg-black text-white w-full'>
+   <NavBar />
+   <div className='pt-[95px]'>
+    <Hero />
+    <About />
+    <Locus />
+    <Testimonials />
+    <Contact />
+    <Toaster position='top-left' />
+    <Analytics />
+   </div>
+  </div>
+ );
 }
 
-export default App
+export default App;
